@@ -3,56 +3,71 @@
   "tags": [
     {
       "name": "lmui-button",
-      "description": "Description of the custom element.",
+      "description": "Base button component.",
       "attributes": [
         {
-          "name": "attr1",
+          "name": "buttonstyle",
           "type": "string",
-          "description": "Attribute One",
-          "defaultValue": "",
-          "required": false
-        }
-      ],
-      "properties": [
-        {
-          "name": "prop1",
-          "type": "string",
-          "attribute": "attr1",
-          "description": "Property One",
-          "defaultValue": "",
-          "required": false
-        }
-      ],
-      "events": [
-        {
-          "name": "event1",
-          "description": "Event One",
-          "type": "CustomEvent"
-        }
-      ],
-      "methods": [
-        {
-          "name": "method1",
-          "description": "Method One"
+          "description": "default button style",
+          "defaultValue": "base",
+          "required": false,
+          "values": [
+            "base",
+            "primary"
+          ]
         }
       ],
       "slots": [
         {
-          "name": "slot1",
-          "description": "Slot One"
+          "name": "",
+          "description": "Slot for button or link"
         }
       ],
       "cssCustomProperties": [
         {
-          "name": "--cssprop1",
-          "description": "CSS Custom Property One",
-          "type": "color"
-        }
-      ],
-      "cssShadowParts": [
+          "name": "--button-color",
+          "description": "",
+          "type": ""
+        },
         {
-          "name": "part1",
-          "description": "CSS Shadow Part 1"
+          "name": "--button-hover-color",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-bg",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-hover-bg",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-border-color",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-outline",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-border-radius",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--button-active-scale",
+          "description": "",
+          "type": ""
+        },
+        {
+          "name": "--scale",
+          "description": "",
+          "type": ""
         }
       ]
     }

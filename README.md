@@ -1,10 +1,13 @@
 [![edit-in-webcomponents.dev](https://webcomponents.dev/assets/ext/edit_in_wcd.svg)](https://webcomponents.dev/edit/KtiSLVd7lxxucF3KhspW)
+
 # LitElement Starter Kit
 
 ### Starter kit result
 
 ```showcase
-  <custom-element name="test"></custom-element>
+  <custom-element buttonstyle="primary" buttonsize="m">
+    <button>Привет, я кнопка</button>
+  </custom-element>
 ```
 
 ### Links

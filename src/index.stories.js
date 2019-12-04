@@ -1,60 +1,81 @@
 import { html } from "lit-html";
 
 export const example = () => html`
+  <style>
+    section {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
   <section>
-    <lmui-button buttonstyle="primary">
+    <custom-element buttonstyle="primary" buttonsize="m">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
+`;
 
+export const exampleButton = () => html`
   <section>
-    <lmui-button buttonstyle="secondary">
+    <custom-element buttonstyle="primary">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
-
+  <br />
   <section>
-    <lmui-button buttonstyle="primary" buttonsize="m">
+    <custom-element buttonstyle="secondary">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
-
+  <br />
   <section>
-    <lmui-button buttonstyle="primary" buttonsize="l">
+    <custom-element buttonstyle="primary" buttonsize="m">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
-
+  <br />
   <section>
-    <lmui-button buttonstyle="primary" buttonsize="fullwidth">
+    <custom-element buttonstyle="primary" buttonsize="l">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
-
+  <br />
   <section>
-    <lmui-button buttonstyle="secondary" scalable buttonsize="fullwidth">
+    <custom-element buttonstyle="primary" buttonsize="fullwidth">
       <button>Привет, я кнопка</button>
-    </lmui-button>
+    </custom-element>
   </section>
+  <br />
   <section>
-    <lmui-button buttonsize="fullwidth">
-      <a href="https://example.com">Привет, я ссылка</a>
-    </lmui-button>
+    <custom-element buttonstyle="secondary" scalable buttonsize="fullwidth">
+      <button>Привет, я кнопка</button>
+    </custom-element>
   </section>
+  <br />
   <section>
-    <lmui-button buttonstyle="secondary" scalable buttonsize="fullwidth">
-      <a href="https://example.com">Привет, я сслыка</a>
-    </lmui-button>
-  </section>
-
-  <section>
-    <lmui-button buttonstyle="text" scalable buttonsize="fullwidth">
+    <custom-element buttonstyle="text" scalable buttonsize="fullwidth">
       <button>Привет, я текстовая кнопка</button>
-    </lmui-button>
-
-    <lmui-button buttonstyle="primary" scalable buttonsize="fullwidth">
+    </custom-element>
+    <br />
+    <custom-element buttonstyle="primary" scalable buttonsize="fullwidth">
       <button>Привет, я уменьшающаяся при нажатии кнопка</button>
-    </lmui-button>
+    </custom-element>
+  </section>
+`;
+
+export const exampleLink = () => html`
+  <section>
+    <custom-element buttonsize="fullwidth">
+      <a href="#">Привет, я ссылка</a>
+    </custom-element>
+  </section>
+  <br />
+  <section>
+    <custom-element buttonstyle="secondary" scalable buttonsize="fullwidth">
+      <a href="#">Привет, я сслыка</a>
+    </custom-element>
   </section>
 `;
 
@@ -72,10 +93,10 @@ export const withExtenralStyles = () => html`
     }
   </style>
   <section>
-    <lmui-button buttonstyle="secondary" buttonsize="m">
+    <custom-element buttonstyle="secondary" buttonsize="m">
       <button>
         Привет. Я должна быть кнопкой на белом фоне с серым ховером
       </button>
-    </lmui-button>
+    </custom-element>
   </section>
 `;
